@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".Home.MoodFragment"
+    android:layout_centerVertical="true">
+
+    <com.google.android.gms.ads.AdView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/adView"
+        app:adSize="BANNER"
+        app:adUnitId="ca-app-pub-6735067062628762/4712781414"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="5dp"/>
+
+    <Button
+        android:id="@+id/mood_track_btn"
+        android:layout_width="250dp"
+        android:layout_height="66dp"
+        android:layout_below="@+id/log_area"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#E63946"
+        android:fontFamily="@font/comfortaa_light"
+        android:text="Log My Mood"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#fff"
+        android:textSize="24sp"
+        app:cornerRadius="15dp" />
+
+    <RelativeLayout
+        android:id="@+id/log_area"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_below="@+id/adView"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="40dp"
+        android:background="@drawable/rounded_corners"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/hello"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/comfortaa_light"
+            android:text="Hello "
+            android:textColor="#fff"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/hello"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/comfortaa_light"
+            android:text="Full name"
+            android:textColor="#fff"
+            android:textSize="32dp" />
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_below="@+id/name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#fff"
+            android:id="@+id/profile_img_mood"/>
+
+
+        <TextView
+            android:id="@+id/label_mood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profile_img_mood"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/comfortaa_light"
+            android:text="How are you feeling today? :"
+            android:textColor="#fff" />
+
+        <Spinner
+            android:id="@+id/log_mood"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/profile_img_mood"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/guide_background"
+            android:popupBackground="@drawable/chip_background"
+            android:spinnerMode="dialog"
+            android:textAlignment="center" />
+
+        <TextView
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/log_mood"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:fontFamily="@font/comfortaa_light"
+            android:text="Once you have logged your mood we work to find self help guides that are best suited to helping your mental health and getting your mood to happy"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="10sp" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

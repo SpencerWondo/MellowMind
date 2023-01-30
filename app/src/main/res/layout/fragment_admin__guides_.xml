@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admin.Admin_Guides_Fragment"
+    android:background="#55828B">
+
+    <TextView
+        android:id="@+id/title3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/comfortaa_light"
+        android:text="Your Guides"
+        android:textColor="#fff"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/title4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title3"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/comfortaa_light"
+        android:text="Click on your guide to edit!"
+        android:textColor="#fff" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/your_guides"
+        android:padding="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/title4"/>
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/empty"
+        android:layout_centerInParent="true"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/comfortaa_light"
+            android:text="Looks like you don't have any guides yet!"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:layout_marginBottom="15dp"/>
+
+        <TextView
+            android:id="@+id/label1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/label"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/comfortaa_light"
+            android:text="Upload some guides and they will appear here!"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="10sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

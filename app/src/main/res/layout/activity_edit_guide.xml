@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admin.EditGuide"
+    android:background="#55828B">
+
+    <Button
+        android:id="@+id/back_btn_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="5dp"
+        android:backgroundTint="#E63946"
+        android:elevation="20dp"
+        android:fontFamily="@font/comfortaa_light"
+        android:text="Back"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#fff"
+        app:cornerRadius="15dp"
+        app:icon="@drawable/ic_back_arrow"
+        app:iconTint="#fff" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/guide_img"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/back_btn_edit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/ic_add"
+        app:civ_border_color="#fff"
+        app:civ_border_width="2dp" />
+
+    <EditText
+        android:id="@+id/guide_title_edit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/guide_img"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/edittext_border"
+        android:drawableStart="@drawable/ic_title"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/comfortaa_light"
+        android:hint="Title"
+        android:padding="15dp"
+        android:textColor="#fff" />
+
+    <EditText
+        android:id="@+id/guide_time_edit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/guide_title_edit"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/edittext_border"
+        android:drawableStart="@drawable/ic_clock"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/comfortaa_light"
+        android:hint="Time"
+        android:padding="15dp"
+        android:textColor="#fff" />
+
+    <EditText
+        android:id="@+id/guide_author_edit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/guide_time_edit"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/edittext_border"
+        android:drawableStart="@drawable/ic_user"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/comfortaa_light"
+        android:hint="Author"
+        android:maxLines="1"
+        android:padding="15dp"
+        android:textColor="#fff" />
+
+    <EditText
+        android:id="@+id/guide_body_edit"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/guide_author_edit"
+        android:background="@drawable/edittext_border"
+        android:drawableStart="@drawable/ic_body"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/comfortaa_light"
+        android:hint="Body"
+        android:padding="15dp"
+        android:textColor="#fff" />
+
+    <Button
+        android:id="@+id/guide_update"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/guide_body_edit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="#E63946"
+        android:elevation="20dp"
+        android:fontFamily="@font/comfortaa_light"
+        android:text="Update"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#fff"
+        app:cornerRadius="15dp" />
+
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/bottom_nav_home"
+        android:icon="@drawable/ic_home"
+        android:title="Home"/>
+
+    <item
+        android:id="@+id/add"
+        android:icon="@drawable/ic_add"
+        android:title="Log Mood"
+        app:cnb_backgroundColor="#E63946"/>
+
+    <item
+        android:id="@+id/Guides"
+        android:icon="@drawable/ic_guides"
+        android:title="Guides"/>
+
+</menu>

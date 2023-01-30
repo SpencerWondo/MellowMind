@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admin.Admin_Login"
+    android:background="#55828B">
+
+    <Button
+        android:id="@+id/back_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:backgroundTint="#E63946"
+        android:elevation="20dp"
+        android:fontFamily="@font/comfortaa_light"
+        android:text="Back"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#fff"
+        app:cornerRadius="15dp"
+        app:icon="@drawable/ic_back_arrow"
+        app:iconTint="#fff" />
+
+    <Button
+        android:id="@+id/admin_enter"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@+id/admin_key"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#E63946"
+        android:elevation="20dp"
+        android:fontFamily="@font/comfortaa_light"
+        android:text="Enter"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#fff"
+        app:cornerRadius="15dp" />
+
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/admin_key"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/comfortaa_light"
+        android:text="Enter the Admin Key:"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/admin_key"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/edittext_border"
+        android:drawableStart="@drawable/ic_lock"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/comfortaa_light"
+        android:hint="Admin Key "
+        android:padding="15dp"
+        android:textColor="#fff" />
+
+    <TextView
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/comfortaa_light"
+        android:text="If you are a licensed therapist, psychologist, or like field and you would like to become an author visit Mellow-Mind.com"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:layout_marginBottom="20dp"/>
+
+</RelativeLayout>

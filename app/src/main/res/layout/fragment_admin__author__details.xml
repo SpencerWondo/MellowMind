@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Admin.Admin_Author_Details"
+    android:background="#55828B">
+
+    <TextView
+        android:id="@+id/title5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/comfortaa_light"
+        android:text="Account Details"
+        android:textColor="#fff"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/title6"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title5"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/comfortaa_light"
+        android:text="This information will be visible on your author page. This allows your followers to contact you (if you wish) or your practice for potential appointments. Be clear and accurate in your responses"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="10sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/title6"
+        android:layout_marginTop="20dp"
+        android:id="@+id/user_info">
+
+        <EditText
+            android:id="@+id/degree"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/edittext_border"
+            android:drawableStart="@drawable/ic_user2"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/comfortaa_light"
+            android:hint="Degree"
+            android:padding="10dp"
+            android:textColor="#fff"
+            android:layout_centerHorizontal="true"/>
+
+        <EditText
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_below="@+id/degree"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/edittext_border"
+            android:drawableStart="@drawable/ic_address"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/comfortaa_light"
+            android:hint="Address"
+            android:padding="10dp"
+            android:textColor="#fff"
+            android:layout_centerHorizontal="true"/>
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_below="@+id/address"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/edittext_border"
+            android:drawableStart="@drawable/ic_email2"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/comfortaa_light"
+            android:hint="Email"
+            android:padding="10dp"
+            android:textColor="#fff"
+            android:layout_centerHorizontal="true"/>
+
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_below="@+id/email"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/edittext_border"
+            android:drawableStart="@drawable/ic_phone"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/comfortaa_light"
+            android:hint="Phone   (xxx) xxx-xxxx"
+            android:padding="10dp"
+            android:textColor="#fff"
+            android:layout_centerHorizontal="true"/>
+
+        <EditText
+            android:id="@+id/website"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_below="@+id/phone"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/edittext_border"
+            android:drawableStart="@drawable/ic_website"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/comfortaa_light"
+            android:hint="Website"
+            android:padding="10dp"
+            android:textColor="#fff"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/update_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user_info"
+        android:layout_marginStart="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="35dp"
+        android:backgroundTint="#E63946"
+        android:elevation="20dp"
+        android:fontFamily="@font/comfortaa_light"
+        android:text="Update Profile"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#fff"
+        app:cornerRadius="15dp" />
+
+</RelativeLayout>

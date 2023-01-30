@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login_Register.Login_Landing"
+    android:background="#264653">
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="40dp"
+        android:backgroundTint="#264653"
+        android:elevation="40dp"
+        android:fontFamily="@font/comfortaa_light"
+        android:text="Login"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#fff"
+        app:cornerRadius="15dp" />
+
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Don't Do This Alone"
+        android:textColor="#fff"
+        android:fontFamily="@font/comfortaa_light"
+        android:layout_above="@+id/create"
+        android:layout_marginLeft="40dp"
+        android:layout_marginBottom="60dp"
+        android:textSize="40dp"/>
+
+    <Button
+        android:id="@+id/create"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="70dp"
+        android:layout_marginLeft="40dp"
+        android:backgroundTint="#E63946"
+        android:elevation="20dp"
+        android:fontFamily="@font/comfortaa_light"
+        android:text="Create Account"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#fff"
+        app:cornerRadius="15dp" />
+
+</RelativeLayout>

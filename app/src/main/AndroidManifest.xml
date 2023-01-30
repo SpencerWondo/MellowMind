@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.firstapp.mellow_mind">
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/good_logo"
+        android:label="MellowMind"
+        android:roundIcon="@drawable/good_logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Mellow_Mind">
+        <activity android:name=".Login_Register.Login_Landing"></activity>
+        <activity android:name=".Admin.EditGuide" />
+        <activity android:name=".Home.Settings.TermsActivity" />
+        <activity android:name=".Author.AuthorActivity" />
+        <activity android:name=".Guide_View_Activity" />
+        <activity android:name=".Home.Settings.AboutActivity" />
+        <activity
+            android:name=".Login_Register.NewLogin"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SplashScreen"
+            android:exported="true"
+            android:launchMode="standard">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Home.Settings.PswrdResetActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Home.Settings.EditProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Admin.Admin_Home"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Admin.Admin_Login"
+            android:screenOrientation="portrait" />
+        <activity android:name=".RegistrationActivity" />
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Home.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.theartofdev.edmodo.cropper.CropImageActivity" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-6735067062628762~3663439530" />
+    </application>
+
+</manifest>

@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".DailyTasks.TasksFragment">
+
+    <RelativeLayout
+        android:id="@+id/task_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_corners"
+        android:layout_marginStart="40dp"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/mood_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/comfortaa_light"
+            android:padding="10dp"
+            android:text="Daily Tasks"
+            android:textColor="#fff"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+
+        <RelativeLayout
+            android:id="@+id/sleep"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mood_label">
+
+            <ImageView
+                android:id="@+id/image1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/sleep"
+                android:backgroundTint="#fff" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/image1"
+                android:fontFamily="@font/comfortaa_light"
+                android:text="Sleep 8 Hours"
+                android:textColor="#fff" />
+
+            <CheckBox
+                android:id="@+id/ch_sleep"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:button="@drawable/ic_task" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/teeth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sleep">
+
+            <ImageView
+                android:id="@+id/image2"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/teeth"
+                android:backgroundTint="#fff" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/image2"
+                android:fontFamily="@font/comfortaa_light"
+                android:text="Brush Your Teeth"
+                android:textColor="#fff" />
+
+            <CheckBox
+                android:id="@+id/ch_teeth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:button="@drawable/ic_task" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/shower"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/teeth">
+
+            <ImageView
+                android:id="@+id/image3"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/shower"
+                android:backgroundTint="#fff" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/image3"
+                android:fontFamily="@font/comfortaa_light"
+                android:text="Shower"
+                android:textColor="#fff" />
+
+            <CheckBox
+                android:id="@+id/ch_shower"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:button="@drawable/ic_task" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/exercise"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/shower">
+
+            <ImageView
+                android:id="@+id/image4"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/exercise"
+                android:backgroundTint="#fff" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/image4"
+                android:fontFamily="@font/comfortaa_light"
+                android:text="Exercise"
+                android:textColor="#fff" />
+
+            <CheckBox
+                android:id="@+id/ch_exercise"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:button="@drawable/ic_task" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/water"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/exercise">
+
+            <ImageView
+                android:id="@+id/image5"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/water"
+                android:backgroundTint="#fff" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/image5"
+                android:fontFamily="@font/comfortaa_light"
+                android:text="Drink Water"
+                android:textColor="#fff" />
+
+            <CheckBox
+                android:id="@+id/ch_water"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:button="@drawable/ic_task" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/clean"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/water">
+
+            <ImageView
+                android:id="@+id/image6"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/clean"
+                android:backgroundTint="#fff" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/image6"
+                android:fontFamily="@font/comfortaa_light"
+                android:text="Clean Up"
+                android:textColor="#fff" />
+
+            <CheckBox
+                android:id="@+id/ch_clean"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:button="@drawable/ic_task" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/love"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/clean">
+
+            <ImageView
+                android:id="@+id/image7"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/loves"
+                android:backgroundTint="#fff" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/image7"
+                android:fontFamily="@font/comfortaa_light"
+                android:text="Do Something You Love"
+                android:textColor="#fff" />
+
+            <CheckBox
+                android:id="@+id/ch_love"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:button="@drawable/ic_task" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/task_enter"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/task_area"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#E63946"
+        android:elevation="20dp"
+        android:fontFamily="@font/comfortaa_light"
+        android:text="Log My Tasks"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#fff"
+        app:cornerRadius="15dp" />
+
+    <com.google.android.gms.ads.AdView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/adView"
+        app:adSize="BANNER"
+        app:adUnitId="ca-app-pub-6735067062628762/6354391876"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

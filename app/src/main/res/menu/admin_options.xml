@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/analtyics"
+        android:title="Analytics"
+        android:icon="@drawable/ic_analytics"/>
+
+    <item android:id="@+id/upload"
+        android:title="Upload"
+        android:icon="@drawable/ic_upload"/>
+
+    <item android:id="@+id/guides"
+        android:title="Guides"
+        android:icon="@drawable/ic_guides"/>
+
+    <item android:id="@+id/account"
+        android:title="Account"
+        android:icon="@drawable/ic_user"/>
+
+</menu>

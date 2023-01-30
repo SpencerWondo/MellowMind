@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/popular"
+        android:title="Most Viewed"/>
+
+    <item android:id="@+id/trending"
+        android:title="Most Liked"/>
+
+    <item android:id="@+id/az"
+        android:title="Mood A - Z"/>
+
+    <item android:id="@+id/za"
+        android:title="Mood Z - A"/>
+
+    <item android:id="@+id/new_old"
+        android:title="New - Old"/>
+
+    <item android:id="@+id/old_new"
+        android:title="Old - New"/>
+
+</menu>

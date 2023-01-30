@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DailyTasks.TaskGuideFragment"
+    android:background="#55828B">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/grid">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/comfortaa_light"
+            android:text="Daily Tasks Guides: "
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:id="@+id/guide_label"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/guide_label"
+            android:text="00"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:layout_margin="5dp"
+            android:id="@+id/task_num"/>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_more"
+            android:id="@+id/options"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="10dp"/>
+
+    </RelativeLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tasks_guides"
+        android:padding="5dp"
+        android:layout_below="@+id/grid"/>
+
+</RelativeLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#55828B"
+    tools:context=".Feed.Feed_Home_Fragment">
+
+    <com.google.android.gms.ads.AdView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/adView"
+        app:adSize="BANNER"
+        app:adUnitId="ca-app-pub-6735067062628762/7260935972"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="5dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/topinfo"
+        android:layout_below="@+id/adView"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/wlecome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/comfortaa_light"
+            android:text="Your Feed"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <com.ogaclejapan.smarttablayout.SmartTabLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/topinfo"
+        app:stl_indicatorWithoutPadding="true"
+        app:stl_indicatorGravity="center"
+        app:stl_indicatorColor="#264653"
+        app:stl_indicatorThickness="35dp"
+        app:stl_indicatorWidth="auto"
+        app:stl_indicatorCornerRadius="25dp"
+        app:stl_underlineThickness="0dp"
+        app:stl_dividerThickness="0dp"
+        app:stl_defaultTabTextAllCaps="true"
+        app:stl_defaultTabTextColor="#fff"
+        app:stl_defaultTabTextSize="12sp"
+        app:stl_distributeEvenly="true"
+        app:stl_clickable="true"
+        app:stl_titleOffset="24dp"/>
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tabs"
+        android:id="@+id/pager" />
+
+</RelativeLayout>

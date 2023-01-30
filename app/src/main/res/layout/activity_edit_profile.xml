@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home.Settings.EditProfileActivity"
+    android:background="#55828B">
+
+    <Button
+        android:id="@+id/close"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:backgroundTint="#E63946"
+        android:fontFamily="@font/comfortaa_light"
+        android:text="Close"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#fff"
+        app:cornerRadius="15dp" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/edit_profile_img"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#fff" />
+
+    <TextView
+        android:id="@+id/image_change"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_profile_img"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/comfortaa_light"
+        android:text="Change Profile Image"
+        android:textColor="#fff" />
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_below="@+id/image_change"
+    android:layout_marginTop="20dp"
+    android:id="@+id/user_info">
+
+    <EditText
+        android:id="@+id/Update_Username"
+        android:layout_width="325dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_border"
+        android:drawableStart="@drawable/ic_user"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/comfortaa_light"
+        android:hint="Username"
+        android:padding="10dp"
+        android:textColor="#fff"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/Update_Name"
+        android:layout_width="325dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Update_Username"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/edittext_border"
+        android:drawableStart="@drawable/ic_title"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/comfortaa_light"
+        android:hint="Full Name"
+        android:padding="10dp"
+        android:textColor="#fff"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/Update_Bio"
+        android:layout_width="325dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Update_Name"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/edittext_border"
+        android:drawableStart="@drawable/ic_body"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/comfortaa_light"
+        android:hint="Bio"
+        android:padding="10dp"
+        android:maxLines="6"
+        android:textColor="#fff"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
+
+    <Button
+        android:id="@+id/save_profile"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/user_info"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="35dp"
+        android:backgroundTint="#E63946"
+        android:elevation="20dp"
+        android:fontFamily="@font/comfortaa_light"
+        android:text="Update Profile"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#fff"
+        app:cornerRadius="15dp" />
+
+    <com.google.android.gms.ads.AdView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/adView"
+        app:adSize="BANNER"
+        app:adUnitId="ca-app-pub-6735067062628762/8949422161"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"/>
+
+</RelativeLayout>

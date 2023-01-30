@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_corners">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_margin="20dp"
+        android:id="@+id/mood_img"
+        android:src="@drawable/positive"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/mood_img">
+
+        <RelativeLayout
+            android:id="@+id/labels"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:id="@+id/mood_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/comfortaa_light"
+                android:text="Mood"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="#fff"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/mood_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mood_label"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/comfortaa_light"
+                android:text="Last date"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="#fff"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/mood_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mood_date"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/comfortaa_light"
+                android:text="Occurances"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="#fff"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/mood_Percent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mood_num"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/comfortaa_light"
+                android:text="Percentage"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="#fff"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toEndOf="@+id/labels"
+            android:background="@drawable/edittext_border2">
+
+            <TextView
+                android:id="@+id/mood_label_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/comfortaa_light"
+                android:text="Happy"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="#fff" />
+
+            <TextView
+                android:id="@+id/mood_date_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mood_label_content"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/comfortaa_light"
+                android:text="7/26/22"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="#fff" />
+
+            <TextView
+                android:id="@+id/mood_num_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mood_date_content"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/comfortaa_light"
+                android:text="44"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="#fff" />
+
+            <TextView
+                android:id="@+id/mood_Percent_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mood_num_content"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/comfortaa_light"
+                android:text="67 %"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="#fff" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

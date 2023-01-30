@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admin.Admin_Login"
+    android:background="#55828B">
+
+    <TextView
+        android:id="@+id/lable3"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/imageView5"
+        android:fontFamily="@font/comfortaa_light"
+        android:text="Did someone forget their password?"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lable3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/comfortaa_light"
+        android:text="That's ok...."
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="14sp"
+        android:id="@+id/label_5"/>
+
+    <Button
+        android:id="@+id/back_btn_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:backgroundTint="#E63946"
+        android:elevation="20dp"
+        android:fontFamily="@font/comfortaa_light"
+        android:text="Back"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#fff"
+        app:cornerRadius="15dp"
+        app:icon="@drawable/ic_back_arrow"
+        app:iconTint="#fff" />
+
+    <Button
+        android:id="@+id/pswrd_reset"
+        android:layout_width="325dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/reset_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="#E63946"
+        android:elevation="20dp"
+        android:fontFamily="@font/comfortaa_light"
+        android:text="Submit"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#fff"
+        app:cornerRadius="15dp" />
+
+    <TextView
+        android:id="@+id/label4"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/label_5"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/comfortaa_light"
+        android:lineSpacingExtra="8sp"
+        android:text="Just enter the email address you've used to register with us and we'll send you a reset link!"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="14sp"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/reset_password"
+        android:layout_width="match_parent"
+        android:layout_marginStart="40dp"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/label4"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/edittext_border"
+        android:drawableStart="@drawable/ic_email"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/comfortaa_light"
+        android:hint="Enter Email"
+        android:padding="10dp" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:srcCompat="@drawable/reset2"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/back_btn_reset"/>
+
+</RelativeLayout>

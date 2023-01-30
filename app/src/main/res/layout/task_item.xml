@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="75dp"
+    android:background="@drawable/rounded_corners"
+    android:padding="5dp"
+    android:elevation="20dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_pic"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#fff"
+        android:layout_marginEnd="15dp"
+        android:layout_centerVertical="true"/>
+
+    <TextView
+        android:id="@+id/task_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/comfortaa_light"
+        android:maxLines="1"
+        android:text="12-25-21"
+        android:textColor="#fff"
+        android:textSize="14sp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/icons"
+        android:layout_below="@+id/task_date"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/profile_pic">
+
+        <ImageView
+            android:id="@+id/sleep"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/sleep"
+            android:layout_marginEnd="5dp"
+            android:layout_centerVertical="true"
+            android:visibility="invisible"
+            android:backgroundTint="#fff" />
+
+        <ImageView
+            android:id="@+id/teeth"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/teeth"
+            android:layout_toEndOf="@+id/sleep"
+            android:layout_marginEnd="5dp"
+            android:layout_centerVertical="true"
+            android:visibility="invisible"
+            android:backgroundTint="#fff" />
+
+        <ImageView
+            android:id="@+id/shower"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/shower"
+            android:layout_toEndOf="@+id/teeth"
+            android:layout_marginEnd="5dp"
+            android:layout_centerVertical="true"
+            android:visibility="invisible"
+            android:backgroundTint="#fff" />
+
+        <ImageView
+            android:id="@+id/exercise"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/exercise"
+            android:layout_toEndOf="@+id/shower"
+            android:layout_marginEnd="5dp"
+            android:layout_centerVertical="true"
+            android:visibility="invisible"
+            android:backgroundTint="#fff" />
+
+        <ImageView
+            android:id="@+id/water"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/water"
+            android:layout_toEndOf="@+id/exercise"
+            android:layout_marginEnd="5dp"
+            android:layout_centerVertical="true"
+            android:visibility="invisible"
+            android:backgroundTint="#fff" />
+
+        <ImageView
+            android:id="@+id/clean"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/clean"
+            android:layout_toEndOf="@+id/water"
+            android:layout_marginEnd="5dp"
+            android:layout_centerVertical="true"
+            android:visibility="invisible"
+            android:backgroundTint="#fff" />
+
+        <ImageView
+            android:id="@+id/love"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/loves"
+            android:layout_toEndOf="@+id/clean"
+            android:layout_marginEnd="5dp"
+            android:layout_centerVertical="true"
+            android:visibility="invisible"
+            android:backgroundTint="#fff" />
+
+        <ImageView
+            android:id="@+id/scares"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/scares"
+            android:layout_toEndOf="@+id/love"
+            android:layout_centerVertical="true"
+            android:visibility="invisible"
+            android:backgroundTint="#fff" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

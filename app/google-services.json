@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "759434971053",
+    "project_id": "mellow-mind",
+    "storage_bucket": "mellow-mind.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:759434971053:android:2e8f0aa0c41b69f1500324",
+        "android_client_info": {
+          "package_name": "com.firstapp.mellow_mind"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "759434971053-c57343lmkrm7ofc1lr8t4invkj9nh0jm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZyW4lB8Z7-7FgSet-zDMMVTixGDoB3sw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "759434971053-c57343lmkrm7ofc1lr8t4invkj9nh0jm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
